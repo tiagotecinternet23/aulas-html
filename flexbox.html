@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox</title>
+
+<style>
+
+/* Evitar problemas com dimensionamentos
+de elementos (mudando o Box Model) */
+* { box-sizing: border-box; }
+
+body { font-family: 'Segoe UI', Verdana; }
+
+/* "Itens"
+São os elementos que desejamos
+alinhar/distribuir usando Flexbox */
+article {
+    box-shadow: black 1px 1px 5px;
+    padding: 10px;
+    border-radius: 8px;
+
+    width: 30%;
+
+    /* Se não definir
+    altura para os itens,
+    eles serão "esticados"
+    de acordo com a altura
+    da container */
+    height: 400px;
+}
+
+/* "Container"
+Elemento no qual ativamos o Flexbox
+e aplicamos as propriedades
+de alinhamento/distribuição. */
+.container {
+    /* Ativando o Flexbox */
+    display: flex;
+
+    /* Direções do Flexbox:
+    row (padrão/horizontal)
+    column (coluna/vertical)
+    row-reverse
+    column-reverse */
+    flex-direction: row;
+    justify-content: center;
+
+    /* Espaço/Intervalo
+    entre cada item */
+    gap: 40px;
+    
+    /* Se a direção for row,
+    se comporta como alinhamento
+    vertical */
+    align-items: center;
+
+    /* "Quebra" do flex */
+    flex-wrap: wrap;
+
+    /* Alinhamento do grupo
+    de itens */
+    /* align-content: center; */
+
+    border: solid 5px red;
+    width: 80%;
+    height: 1500px;
+    margin: auto;
+    /* padding: 10px; */
+}
+
+img { max-width: 100%; }
+
+.exemplo {
+    background-color: yellow;
+    align-self: flex-start;
+}
+
+</style>
+
+</head>
+<body>
+    <h1>Trabalhando com Flexbox</h1>
+    <hr>
+    <p>Flexbox é um mecanismo CSS3 que permite aplicar facilmente recursos
+    de alinhamento, espaçamento e distribuição de elementos no HTML. Muito útil na elaboração de layouts.</p>
+
+    <div class="container">
+        <article class="exemplo">
+            <img src="imagens/mini-apple.jpg" alt="">
+            <h2>Apple</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga reiciendis delectus labore deleniti velit in eos modi dolores ab mollitia.</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-ibm.jpg" alt="">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis distinctio reiciendis velit sequi ipsam ut a nam alias quam architecto.</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-microsoft.jpg" alt="">
+            <h2>Microsoft</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam esse aut nesciunt vel necessitatibus eaque nisi quisquam eos odit vero.</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-apple.jpg" alt="">
+            <h2>Apple</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga reiciendis delectus labore deleniti velit in eos modi dolores ab mollitia.</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-ibm.jpg" alt="">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis distinctio reiciendis velit sequi ipsam ut a nam alias quam architecto.</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-microsoft.jpg" alt="">
+            <h2>Microsoft</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam esse aut nesciunt vel necessitatibus eaque nisi quisquam eos odit vero.</p>
+        </article>
+
+    </div>
+
+</body>
+</html>

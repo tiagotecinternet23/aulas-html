@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando imagens no HTML</title>
+</head>
+<body>
+    <h1>Trabalhando com imagens</h1>
+    <hr>
+    <h2>Formatos mais comuns para a web</h2>
+    <ul>
+        <li>JPEG/JPG: em geral para fotos com suporte a milhões de cores e com compressão.</li>
+        <li>GIF: usado para desenhos, suporta animação e transparência.</li>
+        <li>PNG: bom para fotos com milhões de cores, suporte a compressão e transparência.</li>
+        <li>SVG: formato vetorial, ou seja, baseado em nós, segmentos, linhas. Bom para ilustrações e para casos em que será necessário redimensionar a imagem.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Exemplos</h2>
+
+<!-- Sobre imagens no HTML
+- Tag: <img> 
+- Atributos: 
+    src: indica o caminho do arquivo de imagem e o próprio arquivo
+    alt: texto alternativo (pequena descrição da imagem)
+-->
+    <img src="imagens/pink-floyd.jpg" alt="Integrantes da banda acenando para o público">
+
+    <!-- Imagens dentro de outras tags -->
+    <p>
+        <img src="imagens/logo-html5.png" alt="">
+        <img src="imagens/logo-css3.gif" alt="">
+        <img src="imagens/logo-javascript.gif" alt="">
+    </p>
+
+    <!-- Imagens são colocadas lado a lado (se houver espaço na tela) -->
+    <p> 
+        <img src="imagens/dedos.jpg" alt="">
+        <img src="imagens/ideias.jpg" alt="">
+        <img src="imagens/pacoca.jpg" alt="">
+    </p>
+
+    <!-- Imagens são colocadas uma em cima da outra, não
+    importando o tamanho da tela -->
+    <p><img src="imagens/dedos.jpg" alt=""></p>
+    <p><img src="imagens/ideias.jpg" alt=""></p>
+    <p><img src="imagens/pacoca.jpg" alt=""></p>
+
+    <!-- Novidade no HTML5 para ilustrações em geral -->
+    <figure>
+        <img src="imagens/stonehenge.jpg" alt="">
+        <figcaption>Ruínas do Stonehenge (foto tirada em 2012)</figcaption>
+    </figure>
+
+    <hr>
+
+    <!-- Imagens png/jpg/gif: BITMAP (formadas por pixels) -->
+    <p><img src="imagens/black-cat.png" alt=""></p>
+    
+    <!-- Imagem svg: VETOR (formada por nós, linhas) -->
+    <p><img src="imagens/black-cat.svg" alt=""></p>
+
+
+</body>
+</html>
